@@ -1,0 +1,10 @@
+.list {
+  position: absolute;
+  right: 0;
+  top: 40px;
+  max-height: 320px;
+  background-color: white;
+  border: solid 1px;
+  border-radius: 5px;
+  border-color: lightgray;
+}

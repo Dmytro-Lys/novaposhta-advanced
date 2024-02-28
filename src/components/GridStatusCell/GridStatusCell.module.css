@@ -1,0 +1,39 @@
+.status {
+  position: relative;
+  margin-left: 10px;
+  /* padding-left: 10px; */
+}
+
+.status::before {
+  content: '';
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  position: absolute;
+  top: 4px;
+  left: -10px;
+}
+
+.received::before {
+  background-color: green;
+}
+
+.moved::before {
+  background-color: darkblue;
+}
+
+.preparation::before {
+  background-color: cornflowerblue;
+}
+
+.change-location::before {
+  background-color: yellowgreen;
+}
+
+.arrived::before {
+  background-color: darkorange;
+}
+
+.problematic::before {
+  background-color: darkred;
+}
