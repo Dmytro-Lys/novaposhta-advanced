@@ -24,7 +24,7 @@ const Incomings = () => {
             firstRender.current = false
             return
         }
-        if (!apiKey) return
+        if (!apiKey) return console.log(`ApiKey is not read ${apiKey}`)
         console.log(`ApiKey is ${apiKey}`)
         dispatch(fetchDocuments({
                 apiKey,
