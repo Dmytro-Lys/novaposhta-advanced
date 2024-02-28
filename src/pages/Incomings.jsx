@@ -22,10 +22,10 @@ const Incomings = () => {
     useEffect(() => {
         if (firstRender.current) {
             firstRender.current = false
-            return
+            return console.log ('first render')
         }
         if (!apiKey) return console.log(`ApiKey is not read ${apiKey}`)
-        console.log(`ApiKey is ${apiKey}`)
+        console.log('ApiKey is read')
         dispatch(fetchDocuments({
                 apiKey,
                 modelName: 'InternetDocument',
